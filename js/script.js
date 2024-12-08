@@ -21,7 +21,7 @@ dropdownDefault.addEventListener("click",()=>{
 });
 dropdownContent.childNodes.forEach(dropDownItem => {
     const signalCheck = document.createElement("span");
-    signalCheck.textContent = "x";
+    signalCheck.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     signalCheck.classList.add("signal-check");
     dropDownItem.addEventListener("click",()=>{
         cleanSignal();
